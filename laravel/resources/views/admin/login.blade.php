@@ -84,7 +84,7 @@
         });
         $("#loginadmin").validate({
             submitHandler: function(form) {
-                apex("POST", "{{url('auth/admin/login')}}", new FormData(form), form, "/admin/dashboard", "#");
+                apex("POST", "{{secure_url('auth/admin/login')}}", new FormData(form), form, "/admin/dashboard", "#");
             }
         });
     </script>

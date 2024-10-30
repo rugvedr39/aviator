@@ -109,14 +109,14 @@
             let form = new FormData();
             form.append('id', id);
             form.append('_token', '{{ csrf_token() }}');
-            apex("POST", "{{ url('admin/api/user/delete') }}", form, '', "/admin/user-list", "#");
+            apex("POST", "{{ secure_url('admin/api/user/delete') }}", form, '', "/admin/user-list", "#");
         }
         $("#updatewallet").on('submit', function(e) {
             e.preventDefault();
         });
         $("#updatewallet").validate({
             submitHandler: function(form) {
-                apex("POST", "{{ url('admin/api/updatewallet') }}", new FormData(form), form,
+                apex("POST", "{{ secure_url('admin/api/updatewallet') }}", new FormData(form), form,
                     "/admin/user-list", "#");
             }
         });

@@ -200,7 +200,7 @@
     </div>
 @endsection
 @section('js')
-<script src="{{url('user/withdraw.js')}}"></script>
+<script src="{{secure_url('user/withdraw.js')}}"></script>
 @isset($_GET['msg'])
 @if ($_GET['msg'] == 'Success')
     <script>

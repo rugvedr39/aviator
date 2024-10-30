@@ -8,7 +8,7 @@
                 <p>My Code: {{user('id')}}</p>
             </div>
             <div class="col-md-12 col-12">
-                <p>My URL: <a href="{{url('register?refer'.user('id'))}}">{{url('register?refer'.user('id'))}}</a></p>
+                <p>My URL: <a href="{{secure_url('register?refer'.user('id'))}}">{{secure_url('register?refer'.user('id'))}}</a></p>
             </div>
         </form>
     </div>

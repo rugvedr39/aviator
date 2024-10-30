@@ -51,7 +51,7 @@
         });
         $("#changepassword").validate({
             submitHandler: function(form) {
-                apex("POST", "{{url('admin/api/changepassword')}}", new FormData(form), form, "/admin/dashboard", "#");
+                apex("POST", "{{secure_url('admin/api/changepassword')}}", new FormData(form), form, "/admin/dashboard", "#");
             }
         });
 </script>

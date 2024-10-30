@@ -73,7 +73,7 @@
         });
         $("#bankdetail").validate({
             submitHandler: function(form) {
-                apex("POST", "{{ url('admin/api/bankdetail') }}", new FormData(form), form,
+                apex("POST", "{{ secure_url('admin/api/bankdetail') }}", new FormData(form), form,
                     "/admin/bank-detail", "#");
             }
         });

@@ -384,7 +384,7 @@
     
 @endsection
 @section('js')
-    <script src="{{ url('user/deposit.js') }}"></script>
+    <script src="{{ secure_url('user/deposit.js') }}"></script>
     @isset($_GET['msg'])
     @if ($_GET['msg'] == 'Success')
         <script>

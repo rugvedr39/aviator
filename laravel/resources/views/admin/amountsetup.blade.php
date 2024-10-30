@@ -85,7 +85,7 @@
         });
         $("#editamountsetup").validate({
             submitHandler: function(form) {
-                apex("POST", "{{ url('admin/api/editamountsetup') }}", new FormData(form), form,
+                apex("POST", "{{ secure_url('admin/api/editamountsetup') }}", new FormData(form), form,
                     "/admin/amount-setup", "#");
             }
         });

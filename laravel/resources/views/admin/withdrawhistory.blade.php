@@ -88,7 +88,7 @@
             form.append('userid', userid);
             form.append('amount', amount);
             form.append('_token', '{{ csrf_token() }}');
-            apex("POST", "{{ url('admin/api/withdraw/success') }}", form, '', "/admin/withdrawal-history", "#");
+            apex("POST", "{{ secure_url('admin/api/withdraw/success') }}", form, '', "/admin/withdrawal-history", "#");
         }
 
         function rechargecancel(userid,id,amount,thisc) {
@@ -97,7 +97,7 @@
             form.append('userid', userid);
             form.append('amount', amount);
             form.append('_token', '{{ csrf_token() }}');
-            apex("POST", "{{ url('admin/api/withdraw/cancel') }}", form, '', "/admin/withdrawal-history", "#");
+            apex("POST", "{{ secure_url('admin/api/withdraw/cancel') }}", form, '', "/admin/withdrawal-history", "#");
         }
     </script>
 @endsection
