@@ -60,9 +60,13 @@
     <!-- container-scroller -->
     <!--====== Plugin js ======-->
     <script src="{{ asset('vendor/jquery/jquery-3.6.1.min.js') }}"></script>
+    <script src="https://php.lucky07.fun/vendor/jquery/jquery-3.6.1.min.js"></script>
+
     <script src="/aviatoradmin/assets/vendors/js/vendor.bundle.base.js"></script>
-    <script src="{{ asset('vendor/jquery-validation/dist/jquery.validate.min.js') }}"></script>
-    <script src="{{ asset('vendor/izitoast/js/iziToast.min.js') }}"></script>
+    <!-- <script src="{{ asset('vendor/jquery-validation/dist/jquery.validate.min.js') }}"></script> -->
+    <script src="https://php.lucky07.fun/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+
+    <script src="https://php.lucky07.fun/vendor/izitoast/js/iziToast.min.js"></script>
 
     <!-- plugins:js -->
     <!-- endinject -->
